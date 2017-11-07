@@ -24,3 +24,6 @@ https://www.codewars.com/users/brianzjy
 
 邮箱  
 brianzjy@sina.com
+
+#### 自画像赠送了
+![Mou icon](https://github.com/brianzjy/course/blob/master/course1106/img/people.png)

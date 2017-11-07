@@ -26,4 +26,4 @@ https://www.codewars.com/users/brianzjy
 brianzjy@sina.com
 
 #### 自画像赠送了
-![brianzjy](/img/people.png)
+![brianzjy](https://github.com/brianzjy/course/blob/master/course1106/img/people.png)

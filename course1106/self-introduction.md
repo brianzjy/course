@@ -1,3 +1,4 @@
+![brianzjy](https://github.com/brianzjy/course/blob/master/course1106/img/people.png)
 # 周军业
 ##### UI设计/WEB前断开发
 ### 个人简历
@@ -24,6 +25,3 @@ https://www.codewars.com/users/brianzjy
 
 邮箱  
 brianzjy@sina.com
-
-#### 自画像赠送了
-![brianzjy](https://github.com/brianzjy/course/blob/master/course1106/img/people.png)

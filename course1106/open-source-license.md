@@ -1,6 +1,8 @@
 # Open-source License
 
-#### 个人理解脑图
+#### 理解脑图
+![license](https://github.com/brianzjy/course/blob/master/course1106/img/license.png)
+
 
 
 #### Apache v2 License

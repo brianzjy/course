@@ -1,6 +1,9 @@
 # codewars问题解答
 ## 目录
 1. [字符串合并并按英文字母排序](#jump)
+2. [秒转化时间格式](#jump2)
+3. [取负数](#jump3)
+4. [字符串转化如：abc => A-Bb-Ccc](#jump4)
 
 ---
 #### <span id = "jump">字符串合并并按英文字母排序</span>
@@ -8,6 +11,7 @@
 2个字符串拼接、去重并按英文字母排序。s1="aedsf"  s2="edcsf"  返回出 str="acdefs" 。
 ##### 代码方法
 ```
+个人方法：
 function longest(s1, s2) {  
     var str = s1+s2;  
     var str2="";  
@@ -17,6 +21,20 @@ function longest(s1, s2) {
     }     
     var newStr = str2.split("").sort().join("");  
     return newStr;  
+}
+其他优秀方法：
+function longest(s1, s2) {
+  return Array.from(new Set(s1 + s2)).sort().join('');
+}
+方法：
+function longest(s1, s2) {
+  // your code
+  s3 = s1 + s2;
+  s4 = s3.split("");
+  s4 = s4.sort().filter(function(element, index, array){
+    return element !== array[index - 1];
+  });
+  return s4.join("");
 }
 ```
 
@@ -76,4 +94,75 @@ document.write(arr.join("."))
 
 输出：
 George.John.Thomas
+```
+
+
+---
+#### <span id = "jump2">秒转化时间格式</span>
+##### 描述
+给一个参数秒数，转化为   
+HH = 时间，00-99,参数秒已经限制，不允许出现不允许出现100  
+HH = 时间，00-59  
+HH = 时间，00-99  
+##### 代码方法
+```
+function humanReadable(seconds) {
+  var pad = function(x) { return (x < 10) ? "0"+x : x; }
+  return pad(parseInt(seconds / (60*60))) + ":" +
+         pad(parseInt(seconds / 60 % 60)) + ":" +
+         pad(seconds % 60)
+}
+alert(humanReadable(8263));
+```
+
+##### 知识点
+parseInt() 函数可解析一个字符串，并返回一个整数。
+```
+parseInt("10");			//返回 10
+parseInt("19",10);		//返回 19 (10+9)
+parseInt("11",2);		//返回 3 (2+1)
+parseInt("17",8);		//返回 15 (8+7)
+parseInt("1f",16);		//返回 31 (16+15)
+parseInt("010");		//未定：返回 10 或 8
+```
+
+**%** 取模（余数）
+```
+5%2;			//返回 1
+```
+
+---
+#### <span id = "jump3">取负数</span>
+##### 描述
+给个数字返回负数
+##### 代码方法
+```
+function opposite(number) {
+  return(-number);
+}
+}
+```
+
+---
+#### <span id = "jump4"> 字符串转化如：abc => A-Bb-Ccc </span>
+##### 描述
+字符串转化如：abc => A-Bb-Ccc .第一个字母大写
+##### 代码方法
+```
+function accum(s) {
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+```
+
+##### 知识点
+toUpperCase(),toLowerCase() 大小写。
+```
+'aBc'.toUpperCase();			//返回 ABC
+'aBc'.toLowerCase();		//返回 abc
+```
+
+repeat() 返回一个新的字符串对象，它的值等于重复了指定次数的原始字符串。
+```
+"abc".repeat(3); // Returns "abcabcabc"
+"abc".repeat(0); // Returns an empty string.
 ```

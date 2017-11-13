@@ -6,7 +6,7 @@
 4. [字符串转化如：abc => A-Bb-Ccc](#jump4)
 
 ---
-#### <span id = "jump">字符串合并并按英文字母排序</span>
+#### <span id = "jump"> 1. 字符串合并并按英文字母排序</span>
 ##### 描述
 2个字符串拼接、去重并按英文字母排序。s1="aedsf"  s2="edcsf"  返回出 str="acdefs" 。
 ##### 代码方法
@@ -98,7 +98,7 @@ George.John.Thomas
 
 
 ---
-#### <span id = "jump2">秒转化时间格式</span>
+#### <span id = "jump2">2. 秒转化时间格式</span>
 ##### 描述
 给一个参数秒数，转化为   
 HH = 时间，00-99,参数秒已经限制，不允许出现不允许出现100  
@@ -132,7 +132,7 @@ parseInt("010");		//未定：返回 10 或 8
 ```
 
 ---
-#### <span id = "jump3">取负数</span>
+#### <span id = "jump3">3. 取负数</span>
 ##### 描述
 给个数字返回负数
 ##### 代码方法
@@ -144,7 +144,7 @@ function opposite(number) {
 ```
 
 ---
-#### <span id = "jump4"> 字符串转化如：abc => A-Bb-Ccc </span>
+#### <span id = "jump4">4. 字符串转化如：abc => A-Bb-Ccc </span>
 ##### 描述
 字符串转化如：abc => A-Bb-Ccc .第一个字母大写
 ##### 代码方法
